@@ -1,0 +1,77 @@
+import type { Product } from '@/catalog/types'
+
+export const products: Product[] = [
+  {
+    id: '1',
+    name: 'Caneca de cerâmica rústica',
+    description:
+      'Caneca de cerâmica com acabamento rústico e capacidade ideal para bebidas quentes.',
+    priceInCents: 4000,
+    category: 'mugs',
+    imageUrl: '/assets/images/mug-rustic.png',
+    stock: 10,
+    createdAt: '2026-08-18T12:00:00.000Z',
+  },
+  {
+    id: '2',
+    name: 'Caneca Black Ring',
+    description:
+      'Caneca de cerâmica com acabamento rústico e capacidade ideal para bebidas quentes.',
+    priceInCents: 3000,
+    category: 'mugs',
+    imageUrl: '/assets/images/mug-black-ring.png',
+    stock: 10,
+    createdAt: '2026-08-18T12:00:00.000Z',
+  },
+  {
+    id: '3',
+    name: 'Caneca preto fosco',
+    description:
+      'Caneca de metal com acabamento rústico e capacidade ideal para bebidas quentes.',
+    priceInCents: 4200,
+    category: 'mugs',
+    imageUrl: '/assets/images/mug-matte-black.png',
+    stock: 10,
+    createdAt: '2026-08-18T12:00:00.000Z',
+  },
+  {
+    id: '4',
+    name: 'Camiseta not today',
+    description: 'Camiseta confeccionada em algodão com estampa frontal.',
+    priceInCents: 7890,
+    category: 't-shirts',
+    imageUrl: '/assets/images/t-shirt-not-today.png',
+    stock: 15,
+    createdAt: '2026-08-17T12:00:00.000Z',
+  },
+  {
+    id: '5',
+    name: 'Camiseta Dreamer',
+    description: 'Camiseta confeccionada em algodão com estampa traseira.',
+    priceInCents: 8890,
+    category: 't-shirts',
+    imageUrl: '/assets/images/t-shirt-dreamer.png',
+    stock: 15,
+    createdAt: '2026-08-17T12:00:00.000Z',
+  },
+  {
+    id: '6',
+    name: 'Camiseta Ramones',
+    description: 'Camiseta confeccionada em algodão com estampa frontal.',
+    priceInCents: 8890,
+    category: 't-shirts',
+    imageUrl: '/assets/images/t-shirt-ramones.png',
+    stock: 15,
+    createdAt: '2026-08-17T12:00:00.000Z',
+  },
+  {
+    id: '7',
+    name: 'Camiseta Evening',
+    description: 'Camiseta confeccionada em algodão com estampa frontal.',
+    priceInCents: 9890,
+    category: 't-shirts',
+    imageUrl: '/assets/images/t-shirt-evening.png',
+    stock: 15,
+    createdAt: '2026-08-17T12:00:00.000Z',
+  },
+]
