@@ -6,6 +6,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 
 import { AppRoutes } from './app/routes/routes'
+import { Toaster } from './components/ui/toast'
 import { worker } from './mocks/browser'
 
 const queryClient = new QueryClient()
@@ -17,6 +18,7 @@ worker.start().then(() => {
         <BrowserRouter>
           <AppRoutes />
         </BrowserRouter>
+        <Toaster />
       </QueryClientProvider>
     </StrictMode>
   )
