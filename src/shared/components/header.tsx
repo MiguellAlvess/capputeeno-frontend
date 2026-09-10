@@ -1,10 +1,16 @@
+import { useQuery } from '@tanstack/react-query'
 import { Search, ShoppingBag } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
+import { CartService } from '@/cart/services/cart'
 import { Input } from '@/components/ui/input'
 
 export const Header = () => {
   const navigate = useNavigate()
+  const { data: cart } = useQuery({
+    queryKey: ['cart'],
+    queryFn: CartService.getCart,
+  })
 
   return (
     <header className="bg-white">
@@ -36,7 +42,7 @@ export const Header = () => {
           >
             <ShoppingBag size={22} />
             <span className="bg-destructive absolute -right-2 -bottom-2 flex size-4 items-center justify-center rounded-full text-[10px] text-white">
-              0
+              {cart?.totalItems ?? 0}
             </span>
           </button>
         </div>
